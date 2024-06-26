@@ -1,0 +1,840 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Untree.co">
+        <link rel="shortcut icon" href="/images/favicon.ico">
+        <meta name="description" content=""/>
+        <meta name="keywords" content=""/>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700,900|Oswald:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah">
+        <!-- Icon Fonts -->
+        <link rel="stylesheet" href="fonts/icomoon/style.css">
+        <link rel="stylesheet" href="/fonts/materialdesignicons-webfont.ttf">
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/fonts.css">
+        <!-- CSS Files -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0/dist/fancybox.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="css/aos.css">
+        <link rel="stylesheet" href="css/fancybox.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Portfolio&mdash; Checkout our latest projects</title>
+        <style>.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover,
+.dropdown-item:hover,
+.navbar-toggler:hover {
+    color: #0dcaf0 !important;
+}
+
+/* Updated CSS to align navbar links to the right */
+.navbar-nav {
+    margin-left: auto;
+
+    /* Align navbar links to the right */
+}
+
+/* Adjust dropdown menu styles */
+.dropdown-menu {
+    background-color: aliceblue;
+
+    /* Remove background color */
+    border: none;
+
+    /* Remove any border */
+}
+
+.dropdown-item {
+    background-color: transparent !important;
+
+    /* Ensure no background color */
+    padding: 0.25rem 1.5rem;
+
+    /* Adjust padding as needed */
+    margin: 0;
+
+    /* Remove any margin */
+}
+
+.dropdown-divider {
+    display: none;
+
+    /* Hide the divider */
+}
+
+.navbar-logo {
+    width: 150px;
+
+    /* Adjust the width as needed */
+    height: auto;
+
+    /* Maintain the aspect ratio */
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 12px;
+    line-height: 1.15;
+    border-radius: 4px;
+    font-family: "Poppins", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+    transition: .2s all ease-in;
+}</style>
+        <style>.video-hover {
+    transition: 0.3s ease-in-out;
+}</style>
+        <style>body {
+    cursor: none;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    /* Ensure cursor is on top */
+}
+
+.hover-effect:hover~.custom-cursor,
+.photo-item:hover~.custom-cursor {
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: rgba(0, 255, 255, 0.2);
+}</style>
+    </head>
+    <body>
+        <div class="custom-cursor"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="color: white;">
+                    <img src="https://vincelamuzika.github.io/davidk/david k logo 2.png" alt="David K Logo" class="navbar-logo">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://vincelamuzika.github.io/davidk/index.html" style="color: white;"><strong class="mr-1">Home</strong></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false" style="color: white;"> <strong class="mr-1">Portfolio</strong> </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item custom-dropdown-item" href="#product-shoots">Product Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item custom-dropdown-item" href="#cinematography">Cinematic Productions</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item custom-dropdown-item" href="#our-clientele">Our Clientele</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-1" href="#" style="color: white;"><strong>Reviews</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://vincelamuzika.github.io/davidk/contacts.html" style="color: white;"><strong class="mr-1">Contact&nbsp;</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="site-section-hero bg-image mb-5" style="background-image: url('images/hero-min.jpg');" data-stellar-background-ratio="0.5" id="section-home">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-7 text-center">
+                    <h1 class=" heading text-uppercase text-white" data-aos="fade-up">Portfolio</h1>
+                    <p class="lead text-white mb-4" data-aos="fade-up" data-aos-delay="100">Checkout our latest projects </p>
+                    <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                        <a class="button button-primary-gradient" href="#"><span>BOOK NOW!</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-fluid site-section">
+            <div id="product-shoots"></div>
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    <h2 class="heading">Product Shoots</h2>
+                </div>
+            </div>
+          
+                <section class="row align-items-stretch photos" id="section-photos">
+                    <div class="col-12">
+                        <div class="row align-items-stretch">
+                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                                <a id="first-image" href="https://images.unsplash.com/photo-1583776216237-7cfcd9941a10?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                    <img src="https://images.unsplash.com/photo-1583776216237-7cfcd9941a10?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                    <div class="photo-text-more">
+                                        <span class="icon icon-eye"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                <a id="second-image" href="https://brandfinance.com/wp-content/uploads/2021/05/SAVANNA-CORE-RANGE.png" class="d-block photo-item" data-fancybox="gallery">
+                                    <img src="https://brandfinance.com/wp-content/uploads/2021/05/SAVANNA-CORE-RANGE.png" alt="Image" class="img-fluid mb-0">
+                                    <div class="photo-text-more">
+                                        <span class="icon icon-eye"></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                <a id="third-image" href="https://t4.ftcdn.net/jpg/06/26/62/69/360_F_626626932_C8DrJEsXplwRxMknaRxckqTPn8DtcTFY.jpg" class="d-block photo-item" data-fancybox="gallery">
+                                    <img src="https://t4.ftcdn.net/jpg/06/26/62/69/360_F_626626932_C8DrJEsXplwRxMknaRxckqTPn8DtcTFY.jpg" alt="Image" class="img-fluid mb-0">
+                                    <div class="photo-text-more">
+                                        <span class="icon icon-eye"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="https://images.unsplash.com/photo-1632763358211-6ac390d61db9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="https://images.unsplash.com/photo-1632763358211-6ac390d61db9?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" alt="Image" class="img-fluid mb-0">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-eye"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="https://images.unsplash.com/photo-1615900119829-2158e385f448?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="https://images.unsplash.com/photo-1615900119829-2158e385f448?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" alt="Image" class="img-fluid mb-0">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-eye"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="https://images.unsplash.com/photo-1612817159576-986a0b7a4165?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="https://images.unsplash.com/photo-1612817159576-986a0b7a4165?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" alt="Image" class="img-fluid mb-0">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-eye"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                            <a href="https://images.unsplash.com/photo-1614893122811-09b6e3d05a30?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="https://images.unsplash.com/photo-1614893122811-09b6e3d05a30?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" alt="Image" class="img-fluid mb-0">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-eye"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <a href="https://images.unsplash.com/photo-1629822341718-bba64a290520?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="https://images.unsplash.com/photo-1629822341718-bba64a290520?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" alt="Image" class="img-fluid mb-0">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-eye"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                            <a href="https://images.unsplash.com/photo-1552879948-16c32e175ae5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                <img src="https://images.unsplash.com/photo-1552879948-16c32e175ae5?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHByb2R1Y3QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8Mg%3D%3D" alt="Image" class="img-fluid mb-0">
+                                <div class="photo-text-more">
+                                    <span class="icon icon-eye"></span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="container-fluid site-section">
+                            <div id="wedding-photography"></div>
+                            <div class="row mb-3">
+                                <div class="col-12 text-center">
+                                    <h2 class="heading">Wedding Photography</h2>
+                                </div>
+                                </div>
+                                <section class="row align-items-stretch photos" id="section-photos">
+                                    <div class="col-12">
+                                        <div class="row align-items-stretch">
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                                                <a href="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                <a href="https://images.unsplash.com/photo-1550005809-91ad75fb315f?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                <a href="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                                                <a href="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                <a href="https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/flagged/photo-1620830102229-9db5c00d4afc?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                <a href="https://images.unsplash.com/photo-1625038032515-308ab14d10b9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1625038032515-308ab14d10b9?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                                                <a href="https://images.unsplash.com/photo-1595407753234-0882f1e77954?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1595407753234-0882f1e77954?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                <a href="https://images.unsplash.com/photo-1622117470265-61eb5daff3a3?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1622117470265-61eb5daff3a3?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                <a href="https://images.unsplash.com/photo-1484156818044-c040038b0719?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block photo-item" data-fancybox="gallery">
+                                                    <img src="https://images.unsplash.com/photo-1484156818044-c040038b0719?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Image" class="img-fluid mb-0">
+                                                    <div class="photo-text-more">
+                                                        <span class="icon icon-eye"></span>
+                                                    </div>
+                                                </a>
+                                        
+                                                                   </div>
+                                        <div class="container-fluid site-section">
+                                            <div id="cinematography"></div>
+                                            <div class="row mb-3">
+                                                <div class="col-12 text-center">
+                                                    <h2 class="heading">Cinematography</h2>
+                                                </div>
+                                            </div>
+                                            <section class="row align-items-stretch photos" id="section-photos">
+                                                <div class="col-12">
+                                                    <div class="row align-items-stretch">
+                                                        <!--cinematography-->
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                            <a href="https://videos.pexels.com/video-files/3134532/3134532-sd_640_360_24fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/3134532/3134532-sd_640_360_24fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                            <a href="https://videos.pexels.com/video-files/2889410/2889410-sd_640_360_30fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/2889410/2889410-sd_640_360_30fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+                                                            <a href="https://videos.pexels.com/video-files/8419637/8419637-sd_640_338_24fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/8419637/8419637-sd_640_338_24fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                            <a href="https://videos.pexels.com/video-files/2909914/2909914-sd_640_338_24fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/2909914/2909914-sd_640_338_24fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                            <a href="https://videos.pexels.com/video-files/2849950/2849950-sd_640_360_24fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/2849950/2849950-sd_640_360_24fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                            <a href="https://videos.pexels.com/video-files/8776122/8776122-sd_640_360_25fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/8776122/8776122-sd_640_360_25fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                                                            <a href="https://videos.pexels.com/video-files/3764259/3764259-sd_640_360_30fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/3764259/3764259-sd_640_360_30fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                            <a href="https://videos.pexels.com/video-files/7301429/7301429-sd_640_338_25fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/7301429/7301429-sd_640_338_25fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                                                            <a href="https://videos.pexels.com/video-files/1448735/1448735-hd_1366_720_24fps.mp4" class="d-block photo-item" data-fancybox="gallery">
+                                                                <video class="img-fluid mb-0 video-hover" muted>
+                                                                    <source src="https://videos.pexels.com/video-files/1448735/1448735-hd_1366_720_24fps.mp4" type="video/mp4"> Your browser does not support the video tag.
+                                                                </video>
+                                                                <div class="photo-text-more">
+                                                                    <span class="icon fa fa-play"></span>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                            </section>
+                                            <!-- #section-photos -->
+                                            <style>.counter-minimal-counters {
+    font-size: 36;
+}</style>
+                            </section>
+                            <!-- Page Footer-->
+                            <footer class="section footer-classic bg-gray-950">
+                                <div class="footer-classic-main">
+                                    <div class="container">
+                                        <div class="row row-30">
+                                            <div class="col-lg-3">
+                                                <div class="row row-30 row-xl-40">
+                                                    <div class="col-6 col-md-3 col-lg-12">
+                                                        <article class="counter-minimal">
+                                                            <div class="counter-minimal-counter">
+                                                                <div class="counter text-info font-weight-bold">534</div>
+                                                                <span class="counter-postfix font-weight-bold">+</span>
+                                                            </div>
+                                                            <p class="counter-minimal-title text-white">Projects Completed</p>
+                                                        </article>
+                                                    </div>
+                                                    <div class="col-6 col-md-3 col-lg-12">
+                                                        <article class="counter-minimal">
+                                                            <div class="counter-minimal-counter">
+                                                                <div class="counter font-weight-bold">98%</div>
+                                                                <span class="counter-postfix font-weight-bold">%</span>
+                                                            </div>
+                                                            <p class="counter-minimal-title text-white">Client Satisfaction</p>
+                                                        </article>
+                                                    </div>
+                                                    <div class="col-6 col-md-3 col-lg-12">
+                                                        <article class="counter-minimal">
+                                                            <div class="counter-minimal-counter counter font-weight-bold">50</div>
+                                                            <p class="counter-minimal-title text-white">Awards Won</p>
+                                                        </article>
+                                                    </div>
+                                                    <div class="col-6 col-md-3 col-lg-12">
+                                                        <article class="counter-minimal">
+                                                            <div class="counter-minimal-counter counter font-weight-bold">30</div>
+                                                            <p class="counter-minimal-title text-white">Years of Experience</p>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 col-xl-5">
+                                                <h3 class="text-white">Contact Information</h3>
+                                                <ul class="list-unstyled text-white">
+                                                    <li>
+                                                        <strong>Location:</strong> 123 Media Lane, Film City, CA 90210
+                                                    </li>
+                                                    <li>
+                                                        <strong>Phone:</strong> +44 7979 170002
+                                                    </li>
+                                                    <li>
+                                                        <strong>Email:</strong> info@mediacompany.com
+                                                    </li>
+                                                    <a class="button button-primary-gradient" href="tel:+44 7979 170002"><span>Call Us</span></a>
+                                                </ul>
+                                                <br>
+                                                <h3 class="text-white">Follow Us</h3>
+                                                <ul class="list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="icon mdi mdi-facebook"></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="icon mdi mdi-twitter"></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="icon mdi mdi-instagram"></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="icon mdi mdi-linkedin"></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-5 col-xl-4 mt-2">
+                                                <div class="row row-50 row-xl-70">
+                                                    <div class="col-12">
+                                                        <h3 class="text-white">About Us</h3>
+                                                        <p class="text-white">Since 2024, our media company has been delivering top-notch media solutions to a diverse range of clients. We specialize in creating compelling content that captivates audiences and drives engagement.</p>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <h3 class="text-white">Newsletter</h3>
+                                                        <!-- RD Mailform-->
+                                                        <form class="rd-form rd-mailform form-inline subscribe-form" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                                                            <div class="form-wrap">
+                                                                <input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required">
+                                                                <label class="form-label" for="subscribe-form-2-email">E-mail</label>
+                                                            </div>
+                                                            <button class="button button-primary-gradient button-icon-only text-center mt-0" type="submit" aria-label="subscribe">
+                                                                <span class="icon icon-md mdi mdi-email-outline"></span>
+                                                            </button>
+                                                            <div class="form-button">
+</div>
+                                                        </form>
+                                                        <style>.material-symbols-outlined {
+    font-variation-settings: 'FILL'0,
+                                  'wght'400,
+                                  'GRAD'0,
+                                  'opsz'24;
+}</style>
+                                                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+                                                        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-classic-aside">
+                                    <div class="container">
+                                        <!-- Rights-->
+                                        <p class="rights"><span class="text-white">&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span class="text-white">All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Terms of Use</a><span class="text-white"> and</span><span>&nbsp;</span><a href="#">Privacy Policy</a>. Design&nbsp;by&nbsp;<a href="https://www.vbdynamics.co.za/">vbdynamicsinc</a></p>
+                                    </div>
+                                </div>
+                            </footer>
+    </main>
+    <!-- .site-wrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.0/dist/fancybox.umd.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/lozad.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       document.addEventListener("DOMContentLoaded", function() {
+    const firstImage = document.getElementById("first-image");
+    const secondImage = document.getElementById("second-image");
+    const thirdImage = document.getElementById("third-image");
+
+    // Event listener for the first image
+    firstImage.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        Fancybox.show([
+            {
+                src: "https://images.unsplash.com/photo-1583776216237-7cfcd9941a10?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                thumb: "https://images.unsplash.com/photo-1583776216237-7cfcd9941a10?q=80&w=1926&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Image 1"
+                }
+            },
+            {
+                src: "https://www.woodfordreserve.com/wp-content/uploads/2023/01/21CR07420U03_FOB_0031_Alt-scaled-e1674058905643.jpg",
+                thumb: "https://www.woodfordreserve.com/wp-content/uploads/2023/01/21CR07420U03_FOB_0031_Alt-scaled-e1674058905643.jpg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 1"
+                }
+            },
+            {
+                src: "https://www.rgbc.co.za/wp-content/uploads/2021/04/Shopping-BG-Image-Woodford-Reserve.jpg",
+                thumb: "https://www.rgbc.co.za/wp-content/uploads/2021/04/Shopping-BG-Image-Woodford-Reserve.jpg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 2"
+                }
+            },
+            {
+                src: "https://whiskyadvocate.com/get/files/image/galleries/WR_11_16_22_-27.jpg?resize=1920x0",
+                thumb: "https://whiskyadvocate.com/get/files/image/galleries/WR_11_16_22_-27.jpg?resize=1920x0",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 3"
+                }
+            }
+        ], {
+            Thumbs: {
+                autoStart: true
+            },
+            Toolbar: {
+                display: [
+                    "zoom",
+                    "thumbs",
+                    "close"
+                ]
+            }
+        });
+    });
+
+    // Event listener for the second image
+    secondImage.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        Fancybox.show([
+            {
+                src: "https://brewmistress.co.za/wp-content/uploads/2017/12/savanna-blackbeard-cider.jpg",
+                thumb:" https://brewmistress.co.za/wp-content/uploads/2017/12/savanna-blackbeard-cider.jpg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Image 2"
+                }
+            },
+            {
+                src: "https://brandfinance.com/wp-content/uploads/2021/05/SAVANNA-CORE-RANGE.png",
+                thumb: "https://brandfinance.com/wp-content/uploads/2021/05/SAVANNA-CORE-RANGE.png",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 1"
+                }
+            },
+            {
+                src: "https://cdn.myportfolio.com/4bbd9cd6-f431-4d8c-a17e-4c708baa6165/f4937711-2e03-45cc-9250-a52ac79eac26_rw_1920.jpg?h=8d8c599d7a18c616ed9d70a0e2881792",
+                thumb: "https://cdn.myportfolio.com/4bbd9cd6-f431-4d8c-a17e-4c708baa6165/f4937711-2e03-45cc-9250-a52ac79eac26_rw_1920.jpg?h=8d8c599d7a18c616ed9d70a0e2881792",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 2"
+                }
+            },
+            {
+                src: "https://www.womenstuff.co.za/wp-content/uploads/2017/10/Savanna-Rum.jpg",
+                thumb: "https://www.womenstuff.co.za/wp-content/uploads/2017/10/Savanna-Rum.jpg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 3"
+                }
+            }
+        ], {
+            Thumbs: {
+                autoStart: true
+            },
+            Toolbar: {
+                display: [
+                    "zoom",
+                    "thumbs",
+                    "close"
+                ]
+            }
+        });
+    });
+
+    // Event listener for the third image
+    thirdImage.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        Fancybox.show([
+            {
+                src: "https://static.vecteezy.com/system/resources/previews/031/910/928/non_2x/free-the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg",
+                thumb: "https://static.vecteezy.com/system/resources/previews/031/910/928/non_2x/free-the-best-hot-spicy-burgergraphy-images-will-satisfy-your-cravings-generative-ai-free-photo.jpeg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Image 3"
+                }
+            },
+            {
+                src: "https://hudsonvalleystylemagazine.com/wp-content/uploads/2023/04/mxwllxndr_delicious_rustic_burger_with_bacon_and_melted_cheese_3e8a6c80-b731-4ab3-9583-dfd57d2259c5.jpg",
+                thumb: "https://hudsonvalleystylemagazine.com/wp-content/uploads/2023/04/mxwllxndr_delicious_rustic_burger_with_bacon_and_melted_cheese_3e8a6c80-b731-4ab3-9583-dfd57d2259c5.jpg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 1"
+                }
+            },
+            {
+                src: "https://a-vegan-gourmet.com/wp-content/uploads/2021/04/Vegan-Burger-min.jpg",
+                thumb: "https://a-vegan-gourmet.com/wp-content/uploads/2021/04/Vegan-Burger-min.jpg",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 2"
+                }
+            },
+            {
+                src: "https://i.pinimg.com/originals/e1/b6/8a/e1b68a03bb7e5d3904a12c52fd7e1c43.png",
+                thumb: "https://i.pinimg.com/originals/e1/b6/8a/e1b68a03bb7e5d3904a12c52fd7e1c43.png",
+                opts: {
+                    thumbs: {
+                        autoStart: true,
+                        axis: 'x'
+                    },
+                    caption: "Thumbnail 3"
+                }
+            }
+        ], {
+            Thumbs: {
+                autoStart: true
+            },
+            Toolbar: {
+                display: [
+                    "zoom",
+                    "thumbs",
+                    "close"
+                ]
+            }
+        });
+    });
+
+    // Bind Fancybox to all elements with data-fancybox="gallery"
+    Fancybox.bind('[data-fancybox="gallery"]', {
+        Toolbar: {
+            display: [
+                "zoom",
+                "thumbs",
+                "close"
+            ]
+        }
+    });
+});
+
+    </script>
+    
+    
+    
+   <script>
+    $(document).ready(function() {
+      // Custom cursor movement
+      $(document).mousemove(function(e) {
+        $('.custom-cursor').css({
+          left: e.clientX,
+          top: e.clientY
+        });
+      });
+      // Show custom cursor on hover over specific elements
+      $('.hover-effect, .photo-item').hover(function() {
+        $('.custom-cursor').addClass('hover');
+      }, function() {
+        $('.custom-cursor').removeClass('hover');
+      });
+    });
+  </script>
+    <!-- Scroll Event for Navbar -->
+    <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      let scrollPosition = window.scrollY;
+      navbar.style.transform = `translateY(${scrollPosition * -0.5}px)`;
+    });
+  </script>
+    <!-- Dropdown Show/Hide on Hover -->
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const dropdown = document.querySelector('.nav-item.dropdown');
+      dropdown.addEventListener('mouseenter', function() {
+        this.querySelector('.dropdown-menu').classList.add('show');
+      });
+      dropdown.addEventListener('mouseleave', function() {
+        this.querySelector('.dropdown-menu').classList.remove('show');
+      });
+    });
+  </script>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+</body>

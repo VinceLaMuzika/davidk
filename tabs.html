@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tab Navigation Example</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+
+  <!-- Cards --> 
+  <style>
+.container-fluid {
+    display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+}
+.sidebar {
+    width: 20%; /* Sidebar width */
+    height: 100vh; /* Full height sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: #f8f9fa; /* Light background */
+}
+.content {
+    flex: 1; /* Take remaining space */
+    margin-left: 22%; /* Offset by sidebar width */
+    padding: 10px;
+}
+.w3-sidebar {
+    /* Adjust sidebar styling */
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+.w3-sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+    transition: border-left-color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-left-width 0.3s ease-in-out;
+    border-left: 6px solid transparent; /* Start with a transparent border */
+}
+.w3-sidebar a.active {
+    border-left: 6px solid #0dcaf0; /* Animated border color */
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+.w3-sidebar a:hover {
+    background-color: #ddd;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right; /* Adjust as needed */
+}
+.card {
+    width: 200px; /* Fixed width for each card */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+</head>
+<body>
+<div class="cards-section-container"></div>
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="w3-sidebar">
+                <a href="javascript:;" class="w3-bar-item w3-button active" onclick="showContent('content1')">Cinematography</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content2')">Photography</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content3')">Content Creation</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content4')">Product Shoots</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content5')">Podcast Sessions</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content6')">Drone Services</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content7')">Media Management</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content8')">Voice Over Production</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content9')">Music Production</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content10')">Live Streaming</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content11')">Event Coverage</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content12')">Audio Transcription</a>
+                <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content13')">Profile Creation and Management</a>
+            </div>
+        </div>
+
+
+
+  <!-- Main content area -->
+  <main role="main" class="content">
+    <!-- Default content -->
+    <div id="content1" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Cinematography Services</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content2" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Photography</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content3" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Content Creation</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content4" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Product Shoots</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <div id="content5" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Podcast Sessions</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content6" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Drone Services</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content7" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Media Management</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content8" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Voice Over Production</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content9" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Music Production</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content10" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Live Streaming</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content11" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Event Coverage</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content12" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Audio Transcription</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content13" style="display: none;">
+        <br>
+        <h2 style="text-align: center;">Profile Creation and Management</h2>
+        <br>
+        <div class="card-container d-flex flex-wrap justify-content-center">
+            <div class="card m-2" style="width: 15rem;">
+                
+                <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Description</h4>
+                    <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Pricing</h4>
+                    <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+                </div>
+            </div>
+            <div class="card m-2" style="width: 15rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+                <div class="card-body">
+                    <h4>Booking Form</h4>
+                    <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</main>
+</div>
+</div>
+
+<!-- Bootstrap JS and dependencies (optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+
+function showContent(id) {
+    // Hide all content divs
+    document.querySelectorAll('.content > div').forEach(function(div) {
+        div.style.display = 'none';
+    });
+
+    // Remove active class from all sidebar links
+    document.querySelectorAll('.w3-sidebar a').forEach(function(link) {
+        link.classList.remove('active');
+    });
+
+    // Show the selected content div
+    const selectedContent = document.getElementById(id);
+    selectedContent.style.display = 'block';
+
+    // Add active class to the clicked link
+    event.currentTarget.classList.add('active');
+
+    // Add fade-in animation to cards
+    const cards = selectedContent.querySelectorAll('.card');
+    cards.forEach(function(card) {
+        card.classList.remove('fade-in'); // Reset animation
+        void card.offsetWidth; // Trigger reflow to restart animation
+        card.classList.add('fade-in');
+    });
+}
+
+</script>
+
+</body>
+</html>

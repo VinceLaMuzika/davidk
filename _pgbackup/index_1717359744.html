@@ -1,0 +1,1897 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width height=device-height initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Work+Sans:300,400,500,700%7CZilla+Slab:300,400,500,700,700i%7CGloria+Hallelujah">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="/contact-form-03/contact-css/contact-style.css">
+    <style>
+      .custom-dropdown-item {
+         font-family: 'Helvetica', sans-serif !important;
+         color: white !important;
+         font-weight: 5px !important;
+     }
+   
+         </style>
+    <style>
+      /* Navbar styles */
+      .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        transition: transform 0.3s ease-out;
+      }
+    
+      .h-custom-1.f1 {
+        font-size: 3.75rem;
+      }
+    
+      .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        position: relative;
+      }
+    
+      .typewriter span {
+        display: inline-block;
+        border-right: .15em solid transparent;
+      }
+    
+      .typewriter span:last-child {
+        border-right: .15em solid orange;
+        animation: blink-caret .75s step-end infinite;
+      }
+    
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+      }
+    
+      .typewriter span:last-child {
+        margin-right: 10px; /* Adjust as needed */
+      }
+    
+      /* Image container styles */
+     /* Image container styles */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 500px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px; /* Adjust spacing between images */
+    transition: transform 0.3s ease;
+}
+
+.zoom-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden; /* Ensure the image stays within rounded corners */
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover .zoom-img {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.image-container2:hover .zoom-img {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Overlay styles */
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 195, 255, 0.2); /* Blue tint overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .image-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+/* Title styles */
+.list-inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center; /* Center text horizontally */
+    background-color: rgba(0, 0, 0, 0.5); /* Background for better readability */
+    color: white; /* Text color */
+}
+
+.list-inline-item {
+    padding: 10px 0;
+    font-size: 18px; /* Adjust font size as needed */
+}
+
+/* Button styles */
+.button-block {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    transition: transform 0.3s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth bounce animation */
+@keyframes smooth-bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); /* Adjust the bounce height as needed */
+    }
+    60% {
+        transform: translateY(-5px); /* Adjust the bounce height as needed */
+    }
+}
+
+.button:hover {
+    animation: smooth-bounce 1s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust timing and easing function */
+}
+
+    </style>
+    <style>
+      .nav-link:hover,
+      .dropdown-item:hover,
+      .navbar-toggler:hover {
+        color: #0dcaf0 !important;
+      }
+    </style>
+    <head>
+      <style>
+        .animated-underline {
+          position: relative;
+          z-index: 1;
+          padding: 0;
+          display: inline-block;
+          background: none;
+          text-decoration: none;
+          color: inherit;
+        }
+        .animated-underline::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -2px;
+          width: 100%;
+          height: 13px;
+          background:radial-gradient(to right, #0dcaf0, #006076); /* Customize the underline color */
+          transform: scaleX(0);
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+          z-index: -1; /* Ensure the underline is behind the text */
+        }
+        .animated-underline.in-view::after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+      </style>
+   <style>
+    /* Add your existing styles here */
+    .swiper-slide {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parallax-line {
+        position: absolute;
+        z-index: 1000;
+        height: 6px;
+        background: linear-gradient(to right, #0dcaf0, #006076, #0dcaf0);
+/* Change color as needed */
+        width: 0; /* Start with width 0 */
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 10px; /* Space above the line */
+        transition: width 2s ease-out; /* Smooth transition for the parallax line */
+    }
+
+    .typewriter {
+        overflow: hidden;
+        white-space: nowrap;
+        margin: 0 auto;
+        letter-spacing: .15em;
+        position: relative;
+    }
+
+    .typewriter span {
+        display: inline-block;
+        border-right: .15em solid transparent;
+    }
+
+    .typewriter span:last-child {
+        border-right: .15em solid orange;
+        animation: blink-caret .75s step-end infinite;
+    }
+
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+    }
+</style>
+
+      
+    </head>
+    
+
+<style>
+  /* Updated CSS to align navbar links to the right */
+  .navbar-nav {
+    margin-left: auto; /* Align navbar links to the right */
+  }
+
+  /* Adjust dropdown menu styles */
+  .dropdown-menu {
+    background-color: transparent; /* Remove background color */
+    border: none; /* Remove any border */
+  }
+
+  .dropdown-item {
+    background-color: transparent !important; /* Ensure no background color */
+    padding: 0.25rem 1.5rem; /* Adjust padding as needed */
+    margin: 0; /* Remove any margin */
+  }
+
+  .dropdown-divider {
+    display: none; /* Hide the divider */
+  }
+</style>
+<style>.col-xl-4,
+  .col-xl-4 h2,
+  .col-xl-4 ul {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  }
+  </style>
+  <style>
+    .container-fluid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        width: 20%;
+        height: auto;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        background-color: #f8f9faf4;
+    }
+    .content {
+        flex: 1;
+        margin-left: 5%;
+        padding: 10px;
+    }
+    .w3-sidebar {
+        background-color: #f8f9fa;
+        padding: 10px;
+    }
+    .w3-sidebar a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000;
+        transition: border-left-color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-left-width 0.3s ease-in-out;
+        border-left: 6px solid transparent;
+    }
+    .w3-sidebar a.active {
+        border-left: 6px solid #0dcaf0;
+        background-color: #f8f9fa;
+        font-weight: bold;
+    }
+    .w3-sidebar a:hover {
+        background-color: #ddd;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+    }
+    .card {
+        width: 10rem;
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <style>
+  .services-section-container {
+    background-color: #f4f5f600;
+  }
+  </style>
+  <style>
+    .floating-item-smooth {
+      animation: up-down-smooth-animation 1s infinite ease-in-out alternate;
+    }
+  
+    @keyframes up-down-smooth-animation {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-10px);
+      }
+    }
+    .post-minimal {
+    position: relative;
+  }
+
+  .star-icons {
+    position: absolute;
+    top: -4%;
+    left: 5;
+    
+    transform: translateY(-5%);
+    display: flex;
+    flex-direction: row;
+    color: rgb(0, 247, 255);
+    box-shadow: #000;
+    
+    
+  }
+
+  .star-icons .icon {
+    margin: 2px 0;
+  }
+  </style>
+  <style>
+
+.section-lg {
+    padding: 60px 0;
+}
+
+.bg-default {
+    background-color: #f8f9fa;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.post-minimal {
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.post-minimal:hover {
+    transform: translateY(-10px);
+}
+
+.post-minimal-media {
+    overflow: hidden;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.post-minimal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.post-minimal:hover .post-minimal-image {
+    transform: scale(1.1);
+}
+
+.post-minimal-content {
+    padding: 15px;
+}
+
+.star-icons {
+    margin-bottom: 10px;
+}
+
+.star-icons .icon {
+    color: #ffc107;
+}
+
+.post-minimal-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0 5px;
+}
+
+.post-minimal-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post-minimal-subtitle {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+  </style>
+     <style>
+.content-section {
+    transform: scale(0.8);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.content-section.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+  </style>
+  <style>
+    .parallax {
+        background: url('images/parallax-bg.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 300px;
+    }
+    
+    .container {
+        padding: 50px 0;
+    }
+    
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+    
+    .image-container img {
+        width: 100%;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+    
+    .image-container .image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 15px;
+    }
+    
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+    
+    .image-container:hover .image-overlay {
+        opacity: 1;
+    }
+    
+    .image-container ul {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        color: white;
+        transition: transform 0.3s ease, font-size 0.3s ease;
+        transform-origin: left center; /* Set transform origin to the left center */
+    }
+    
+    .image-container ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    .image-container:hover ul {
+        transform: scale(1.2);
+        font-size: 1.5rem;
+    }
+    
+    .image-container ul li a {
+        color: #0dcaf0;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .image-container ul li a:hover {
+        color: #006076;
+    }
+    
+    .text-content {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+        transition: font-size 0.3s ease, transform 0.3s ease;
+        transform-origin: left center; /* Set transform origin to the left center */
+    }
+    
+    .image-container:hover .text-content {
+        font-size: 1.5rem; /* Adjust this value as needed */
+        transform: scale(1.2);
+    }
+    
+    @media (max-width: 768px) {
+        .text-content {
+            font-size: 1em;
+        }
+    
+        .image-container:hover .text-content {
+            font-size: 1.2em;
+        }
+    }
+    </style>
+    
+    
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    
+    
+  </head>
+  <body>
+   
+      <!-- Page Header-->
+      
+    <!-- Navbar -->
+<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="color: white;">
+      <img src="david k logo 2.png" alt="David K Logo">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#" style="color: white;"><strong>Home</strong></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+            aria-expanded="false" style="color: white;">
+            <strong>Portfolio</strong>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item custom-dropdown-item" href="https://vincelamuzika.github.io/davidk/portfolio/index.html#product-shoots
+              ">Product Portfolio</a></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="https://vincelamuzika.github.io/davidk/portfolio/index.html#cinematography
+              ">Cinematic Productions</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item custom-dropdown-item" href="#">Our Clientele</a></li>
+        </ul>
+        
+              
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reviews" style="color: white;"><strong>Reviews</strong></a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="contacts.html" style="color: white;"><strong>Contact Us</strong></a>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+
+
+
+          
+<section>
+  <section>
+    <!-- Swiper -->
+  
+    <div class="swiper-container swiper-slider swiper-slider-1" data-loop="false" data-autoplay="5000" data-simulate-touch="false">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-slide-bg="images/swiper-slide-1.jpg">
+          <div class="swiper-slide-caption context-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-7">
+                  <div class="box-animation">
+                    <h6 data-caption-animate="slideInLeft" data-caption-delay="150">DAVID.K Media Group</h6>
+                    <h1 data-caption-animate="slideInLeft" data-caption-delay="300">
+                      <mark class="animated-underline">Empowering</mark> your story <br> 
+                      <span class="text-italic font-weight-bold">Amplifying Your Voice</span>
+                    </h1>
+                    <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                      <a class="button button-primary-gradient" href="#"><span>BOOK NOW!</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide" data-slide-bg="images/swiper-slide-2.jpg">
+          <div class="swiper-slide-caption context-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-7">
+                  <div class="box-animation">
+                    <h6 data-caption-animate="slideInLeft" data-caption-delay="150">DAVID.K Media Group</h6>
+                    <h1 data-caption-animate="slideInLeft" data-caption-delay="300"> 
+                      <mark class="animated-underline">Crafting Narratives And<br> 
+                      <span class="text-italic font-weight-bold">Shaping Perspectives </span>
+                    </h1>
+                    <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                      <a class="button button-primary-gradient" href="#"><span>BOOK NOW!</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="swiper-slide" data-slide-bg="images/swiper-slide-3.jpg">
+          <div class="swiper-slide-caption context-dark">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-10 col-lg-7">
+                  <div class="box-animation">
+                    <h6 data-caption-animate="slideInLeft" data-caption-delay="150">DAVID.K Media Group</h6>
+                    <h1 data-caption-animate="slideInLeft" data-caption-delay="300">Your Journey is <br>
+                      <span class="text-italic font-weight-bold">Our Passion</span>
+                    </h1>
+                    <div class="button-block" data-caption-animate="fadeInUp" data-caption-delay="450">
+                      <a class="button button-primary-gradient" href="#"><span>BOOK NOW!</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Parallax line -->
+
+  </section>
+  
+  <section class="section section-lg bg-gray-100">
+    <div class="container">
+        <div class="row row-50 justify-content-center">
+            <div class="col-12 text-center">
+                <h3 class="h-custom-1 f1 typewriter-trigger" id="typewriter-text">
+                    <strong>We seek</strong> <span id="demo"></span>
+                </h3>
+                <div class="parallax-line" id="parallax-line"></div>
+            </div>
+            <div class="col-sm-6 col-lg-5 wow fadeIn text-center" >
+                <!-- Tagline -->
+                <p>Your experiences, your journey, your story is one the worlds need to see and hear. 
+                   We aim to inspire people globally by articulating their stories, capturing their 
+                   moments and creating lifelong moments of visual excellence.</p>
+                <a class="button button-primary-gradient" href="#"><span>Read More</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<style>
+  .parallax {
+    padding-bottom: 50px; /* Adjust the value as needed */
+  }
+</style>
+  
+  <br>
+  <h2 style="text-align: center;">Our Portfolio</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-4 wow fadeIn text-center" data-wow-delay=".4s">
+            <div class="image-container">
+                <ul class="list-inline">
+                    <li class="list-inline-item text-content">Product portfolio</li>
+                </ul>
+                <div class="image-content">
+                    <img class="img-rounded zoom-img" src="images/afri.jpg" alt="Product portfolio">
+                    <a href="https://vincelamuzika.github.io/davidk/portfolio/index.html#product-shoots">
+                        <div class="image-overlay"></div> <!-- Overlay for hover effect -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 wow fadeIn text-center" data-wow-delay=".4s">
+            <div class="image-container">
+                <ul class="list-inline">
+                    <li class="list-inline-item text-content">Cinematic productions</li>
+                </ul>
+                <div class="image-content">
+                    <img class="img-rounded zoom-img" src="images/afri1.jpg" alt="Cinematic productions">
+                    <a href="https://vincelamuzika.github.io/davidk/portfolio/index.html#cinematography">
+                        <div class="image-overlay"></div> <!-- Overlay for hover effect -->
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-4 wow fadeIn text-center" data-wow-delay=".4s">
+            <div class="image-container">
+                <ul class="list-inline">
+                    <li class="list-inline-item text-content">Our Clientele</li>
+                </ul>
+                <div class="image-content">
+                    <img class="img-rounded zoom-img" src="images/afri3.jpg" alt="Our Clientele">
+                    <a href="https://vincelamuzika.github.io/davidk/portfolio/index.html">
+                        <div class="image-overlay"></div> <!-- Overlay for hover effect -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    
+
+   
+<div class="services-section-container">
+
+    <div class="container-fluid">
+      <!-- Sidebar -->
+      <div class="sidebar">
+          <div class="w3-sidebar">
+              <a href="javascript:;" class="w3-bar-item w3-button active" onclick="showContent('content1')">Cinematography</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content2')">Photography</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content3')">Content Creation</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content4')">Product Shoots</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content5')">Podcast Sessions</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content6')">Drone Services</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content7')">Media Management</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content8')">Voice Over Production</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content9')">Music Production</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content10')">Live Streaming</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content11')">Event Coverage</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content12')">Audio Transcription</a>
+              <a href="javascript:;" class="w3-bar-item w3-button" onclick="showContent('content13')">Profile Creation and Management</a>
+          </div>
+      </div>
+<br>
+  
+<!-- Main content area -->
+<main role="main" class="content">
+  <!-- Default content -->
+  <div id="content1" class="content-section">
+      <br>
+      <h2 style="text-align: center;">Cinematography Services</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+<style>
+    /* Initial styling */
+    .content-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .content-section.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+
+  <div id="content2" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;"></h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content3" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Content Creation</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content4" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Product Shoots</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+ 
+
+  <div id="content5" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Podcast Sessions</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content6" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Drone Services</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content7"  class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Media Management</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content8" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Voice Over Production</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content9" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Music Production</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content10" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Live Streaming</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content11" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Event Coverage</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content12" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Audio Transcription</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div id="content13" class="content-section" style="display: none;">
+      <br>
+      <h2 style="text-align: center;">Profile Creation and Management</h2>
+      <br>
+      <div class="card-container d-flex flex-wrap justify-content-center">
+          <div class="card m-2" style="width: 15rem;">
+              
+              <img class="card-img-top" src="https://images.pexels.com/photos/6328831/pexels-photo-6328831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Description</h4>
+                  <p class="card-text">Our cinematography services capture your special moments with professional quality.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://media.istockphoto.com/id/1462932996/photo/cost-and-quality-control-business-strategy-and-project-management-concept-businessman-working.jpg?s=612x612&w=0&k=20&c=TUVDo4Q6uUpsJCssPxQ05egXtfFoHT0AEd78yMWTW80=" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Pricing</h4>
+                  <p class="card-text">$300 per hour. We offer customizable packages to fit your budget and needs.</p>
+              </div>
+          </div>
+          <div class="card m-2" style="width: 15rem;">
+              <img class="card-img-top" src="https://images.pexels.com/photos/9052846/pexels-photo-9052846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card image cap">
+              <div class="card-body">
+                  <h4>Booking Form</h4>
+                  <p class="card-text">To book our cinematography services, please fill out the form with your event details and preferred dates.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+</main>
+
+</div>
+</div>
+
+ <!-- Contact form-->
+ <section class="ftco-section">
+  <div class="container-form">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center mb-5">
+        <h2 class="heading-section"></h2>
+      </div>
+    </div>
+    <div class="row no-gutters justify-content-center">
+      <div class="col-md-5 d-flex align-items-stretch">
+        <div class="info-wrap w-100 p-5 img" style="background-image: url('https://images.pexels.com/photos/814830/pexels-photo-814830.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="contact-wrap w-100 p-md-5 p-4">
+          <h3 class="mb-4"></h3>
+          <div id="typewriter-text" class="mb-4"></div>
+          <div id="form-message-warning" class="mb-4"></div> 
+          
+          <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label class="label" for="name">Full Name</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                </div>
+              </div>
+              <div class="col-md-6"> 
+                <div class="form-group">
+                  <label class="label" for="email">Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="label" for="subject">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label class="label" for="#">Message</label>
+                  <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary">
+                  <div class="submitting"></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <!-- Contact form-->
+
+
+
+
+
+      </section>
+      <div id="reviews">
+      <!-- Featured Projects-->
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+            <h2 class="wow fadeIn"></h2>
+            <div class="row justify-content-center row-30 row-md-50 row-xl-70">
+                <div class="col-sm-6 col-lg-3 wow bounceInLeft floating-item-smooth" data-wow-duration="1s">
+                    <!-- Post Minimal-->
+                    <div class="post-minimal">
+                        <div class="card-body2 box shadow rounded bg-color white">
+                            <p>“Great service and friendly staff. Highly recommend!”</p>
+                        </div>
+                        <figure class="post-minimal-media">
+                            <a href="#">
+                                <img class="post-minimal-image" src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Karen Stanford" width="370" height="260"/>
+                            </a>
+                            <div class="star-icons">
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon far fa-star"></span>
+                            </div>
+                        </figure>
+                        <div class="post-minimal-content">
+                            <h4 class="post-minimal-title"><a href="#">Karen Stanford</a></h4>
+                            <p class="post-minimal-subtitle">Financial Analyst</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-lg-3 wow bounceInLeft floating-item-smooth" data-wow-duration="1.2s">
+                    <!-- Post Minimal-->
+                    <div class="post-minimal">
+                        <div class="card-body2 box shadow rounded bg-color white">
+                            <p>“Very professional and efficient.”</p>
+                        </div>
+                        <figure class="post-minimal-media">
+                            <a href="#">
+                                <img class="post-minimal-image" src="https://images.pexels.com/photos/1764564/pexels-photo-1764564.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Maria Howard" width="370" height="260"/>
+                            </a>
+                            <div class="star-icons">
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon far fa-star"></span>
+                            </div>
+                        </figure>
+                        <div class="post-minimal-content">
+                            <h4 class="post-minimal-title"><a href="#">Maria Howard</a></h4>
+                            <p class="post-minimal-subtitle">Digital Marketer</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-sm-6 col-lg-3 wow bounceInRight floating-item-smooth" data-wow-duration="1s">
+                    <!-- Post Minimal-->
+                    <div class="post-minimal">
+                        <div class="card-body2 box shadow rounded bg-color white">
+                            <p>“Excellent experience from start to finish.”</p>
+                        </div>
+                        <figure class="post-minimal-media">
+                            <a href="#">
+                                <img class="post-minimal-image" src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Steven Carter" width="370" height="260"/>
+                            </a>
+                            <div class="star-icons">
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon fas fa-star"></span>
+                                <span class="icon far fa-star"></span>
+                            </div>
+                        </figure>
+                        <div class="post-minimal-content">
+                            <h4 class="post-minimal-title"><a href="#">Steven Carter</a></h4>
+                            <p class="post-minimal-subtitle">Construction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    
+    <style>
+    .section-lg .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .post-minimal-media {
+        position: relative;
+    }
+    
+    .star-icons {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        font-size: 1.5rem; /* Adjust size as needed */
+        color: gold;
+    }
+    
+    .card-body2 {
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    </style>
+ 
+    </section>
+   
+      <!-- Latest Blog Posts-->
+     
+     <style>
+    .owl-carousel .owl-item {
+      margin-right: 0 !important;
+    }
+    
+    .thumbnail-thin {
+      display: block;
+    }
+  </style>
+      <section class="section oh text-center">
+        <div class="owl-carousel wow fadeIn"
+             data-items="2"
+             data-sm-items="3"
+             data-md-items="4"
+             data-lg-items="5"
+             data-xl-items="6"
+             data-dots="false"
+             data-nav="false"
+             data-stage-padding="0"
+             data-loop="false"
+             data-margin="0"
+             data-mouse-drag="false"
+             data-lightgallery="group">
+             
+          <!-- Thumbnail Thin -->
+          <a class="thumbnail-thin" data-lightgallery="item">
+            <div class="thumbnail-thin-inner">
+              <img class="thumbnail-thin-image" src="https://source.unsplash.com/320x320/?media" alt="Media" width="320" height="320" />
+            </div>
+          </a>
+          
+          <!-- Thumbnail Thin -->
+          <a class="thumbnail-thin" data-lightgallery="item">
+            <div class="thumbnail-thin-inner">
+              <img class="thumbnail-thin-image" src="https://source.unsplash.com/320x320/?photography" alt="Photography" width="320" height="320" />
+            </div>
+          </a>
+          
+          <!-- Thumbnail Thin -->
+          <a class="thumbnail-thin" data-lightgallery="item">
+            <div class="thumbnail-thin-inner">
+              <img class="thumbnail-thin-image" src="https://source.unsplash.com/320x320/?videoediting" alt="Video Editing" width="320" height="320" />
+            </div>
+          </a>
+          
+          <!-- Thumbnail Thin -->
+          <a class="thumbnail-thin" data-lightgallery="item">
+            <div class="thumbnail-thin-inner">
+              <img class="thumbnail-thin-image" src="https://source.unsplash.com/320x320/?drone" alt="Drone" width="320" height="320" />
+            </div>
+          </a>
+          
+          <!-- Thumbnail Thin -->
+          <a class="thumbnail-thin" data-lightgallery="item">
+            <div class="thumbnail-thin-inner">
+              <img class="thumbnail-thin-image" src="https://source.unsplash.com/320x320/?musicstudio" alt="Music Studio" width="320" height="320" />
+            </div>
+          </a>
+          
+          <!-- Thumbnail Thin -->
+          <a class="thumbnail-thin" data-lightgallery="item">
+            <div class="thumbnail-thin-inner">
+              <img class="thumbnail-thin-image" src="https://source.unsplash.com/320x320/?podcast" alt="Podcast" width="320" height="320" />
+            </div>
+          </a>
+          
+        </div>
+      </section>
+      
+      
+                
+                <!-- Include jQuery -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                <!-- Include Owl Carousel JS -->
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+                
+                <script>
+                $(document).ready(function(){
+                  $(".owl-carousel").owlCarousel({
+                    items: 6,
+                    loop: true,
+                    margin: 10,
+                    autoplay: true,
+                    autoplayTimeout: 3000, // 3 seconds
+                    autoplayHoverPause: true,
+                    dots: true,
+                    responsive:{
+                      0:{ items: 2 },
+                      600:{ items: 3 },
+                      1000:{ items: 4 },
+                      1200:{ items: 5 },
+                      1400:{ items: 6 }
+                    }
+                  });
+                });
+                </script>
+                
+                
+                
+      
+      
+      
+      
+      
+      
+    
+    
+    
+<style>
+  .counter-minimal-counters {
+    font-size: 36;
+  }
+  
+</style>
+    
+    
+      </section>
+      <!-- Page Footer-->  <footer class="section footer-classic bg-gray-950">
+  <div class="footer-classic-main">
+    <div class="container">
+      <div class="row row-30">
+        <div class="col-lg-3">
+          <div class="row row-30 row-xl-40">
+            <div class="col-6 col-md-3 col-lg-12">
+              <article class="counter-minimal">
+                <div class="counter-minimal-counter">
+                  <div class="counter">334</div><span class="counter-postfix">+</span>
+                </div>
+                <p class="counter-minimal-title">Projects Completed</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-3 col-lg-12">
+              <article class="counter-minimal">
+                <div class="counter-minimal-counter">
+                  <div class="counter">98%</div><span class="counter-postfix">%</span>
+                </div>
+                <p class="counter-minimal-title">Client Satisfaction</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-3 col-lg-12">
+              <article class="counter-minimal">
+                <div class="counter-minimal-counter counter">50</div>
+                <p class="counter-minimal-title">Awards Won</p>
+              </article>
+            </div>
+            <div class="col-6 col-md-3 col-lg-12">
+              <article class="counter-minimal">
+                <div class="counter-minimal-counter counter">30</div>
+                <p class="counter-minimal-title">Years of Experience</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 col-xl-5">
+          <h3>Contact Information</h3>
+          <ul class="list-unstyled">
+            <li><strong>Location:</strong> 123 Media Lane, Film City, UK 90210</li>
+            <li><strong>Phone:</strong> +44 7979 170002</li>
+            <li><strong>Email:</strong> info@davidk.com</li>
+           
+            <a class="button button-primary-gradient" href="tel:+44 7979 170002"><span>Call Us</span></a>
+          </ul>
+         
+         
+          <br>
+          <style>
+            h3.follow-us {
+  color: #87CEEB;
+}
+
+ul.list-inline li a.icon {
+  color: #87CEEB;
+}
+
+          </style>
+           <h3>Follow Us</h3>
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="icon mdi mdi-facebook"></a></li>
+            <li class="list-inline-item"><a href="#" class="icon mdi mdi-twitter"></a></li>
+            <li class="list-inline-item"><a href="#" class="icon mdi mdi-instagram"></a></li>
+            <li class="list-inline-item"><a href="#" class="icon mdi mdi-linkedin"></a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-5 col-xl-4">
+          <div class="row row-50 row-xl-70">
+            <div class="col-12">
+              <h3>About Us</h3>
+              <p>Since 2024, our media company has been delivering top-notch media solutions to a diverse range of clients. We specialize in creating compelling content that captivates audiences and drives engagement.</p>
+            </div>
+            <div class="col-12">
+              <h3>Newsletter</h3>
+             <!-- RD Mailform-->
+              <form class="rd-form rd-mailform form-inline subscribe-form" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+                <div class="form-wrap">
+                  <input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required">
+                  <label class="form-label" for="subscribe-form-2-email">E-mail</label>
+                </div>
+                <div class="form-button">
+                  <button class="button button-primary-gradient button-icon-only" type="submit" aria-label="subscribe"><span class="icon icon-md mdi mdi-email-outline"></span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-classic-aside">
+    <div class="container">
+      <!-- Rights-->
+      <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Terms of Use</a><span> and</span><span>&nbsp;</span><a href="#">Privacy Policy</a>. Design&nbsp;by&nbsp;<a href="https://www.vbdynamics.co.za/">vbdynamicsinc</a></p>
+    </div>
+  </div>
+</footer>
+
+
+
+    </div>
+   
+    <!-- Intersection Observer for animated underline -->
+    <script>
+      new WOW().init();
+    </script>
+    
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    const target = document.querySelector('.animated-underline');
+    if (target) {
+      observer.observe(target);
+    }
+  });
+</script>
+
+<!-- External Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<!-- Initialize WOW.js -->
+<script>
+  new WOW().init();
+</script>
+
+<!-- Scroll Event for Navbar -->
+<script>
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    let scrollPosition = window.scrollY;
+    navbar.style.transform = `translateY(${scrollPosition * -0.5}px)`;
+  });
+</script>
+
+<!-- Dropdown Show/Hide on Hover -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector('.nav-item.dropdown');
+
+    dropdown.addEventListener('mouseenter', function () {
+      this.querySelector('.dropdown-menu').classList.add('show');
+    });
+
+    dropdown.addEventListener('mouseleave', function () {
+      this.querySelector('.dropdown-menu').classList.remove('show');
+    });
+  });
+</script>
+
+<!-- Typewriter Effect and Parallax Line -->
+<script>
+  // Existing typewriter function for the initial text
+  let i = 0;
+  const txt = 'the extraordinary';
+  const speed = 50;
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
+  // IntersectionObserver to trigger typewriter effect
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        typeWriter();
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  // Observe elements with class 'typewriter-trigger'
+  const typewriterElements = document.querySelectorAll('.typewriter-trigger');
+  typewriterElements.forEach(element => {
+    observer.observe(element);
+  });
+
+  // Function for the new typewriter effect on h3
+  function typeWriterForH3() {
+    let j = 0;
+    const h3Text = 'How can we help you ?';
+    const h3Speed = 50;
+    const h3Element = document.querySelector('.contact-wrap h3'); // Assuming h3 is inside .contact-wrap
+
+    function typeWriterInner() {
+      if (j < h3Text.length) {
+        h3Element.innerHTML += h3Text.charAt(j);
+        j++;
+        setTimeout(typeWriterInner, h3Speed);
+      }
+    }
+    typeWriterInner();
+  }
+
+  // IntersectionObserver for h3 element
+  const h3Element = document.querySelector('.contact-wrap h3');
+  const observerForH3 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        typeWriterForH3();
+        observerForH3.unobserve(entry.target);
+      }
+    });
+  });
+
+  observerForH3.observe(h3Element);
+
+  // Function for the new typewriter effect on h2 in .section-lg
+  function typeWriterForH2() {
+    let k = 0;
+    const h2Text = 'What our clients say';
+    const h2Speed = 50;
+    const h2Element = document.querySelector('.section-lg h2'); // Assuming h2 is inside .section-lg
+
+    function typeWriterInner() {
+      if (k < h2Text.length) {
+        h2Element.innerHTML += h2Text.charAt(k);
+        k++;
+        setTimeout(typeWriterInner, h2Speed);
+      }
+    }
+    typeWriterInner();
+  }
+
+  // IntersectionObserver for h2 element in .section-lg
+  const h2Element = document.querySelector('.section-lg h2');
+  const observerForH2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        typeWriterForH2();
+        observerForH2.unobserve(entry.target);
+      }
+    });
+  });
+
+  observerForH2.observe(h2Element);
+
+  // Function for the new typewriter effect on h2 in #content2
+  function typeWriterForContent2H2() {
+    let l = 0;
+    const content2H2Text = 'Photography';
+    const content2H2Speed = 50;
+    const content2H2Element = document.querySelector('#content2 h2');
+
+    function typeWriterInner() {
+      if (l < content2H2Text.length) {
+        content2H2Element.innerHTML += content2H2Text.charAt(l);
+        l++;
+        setTimeout(typeWriterInner, content2H2Speed);
+      }
+    }
+    typeWriterInner();
+  }
+
+  // IntersectionObserver for h2 element in #content2
+  const content2H2Element = document.querySelector('#content2 h2');
+  const observerForContent2H2 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        typeWriterForContent2H2();
+        observerForContent2H2.unobserve(entry.target);
+      }
+    });
+  });
+
+  observerForContent2H2.observe(content2H2Element);
+
+  // Other existing scroll and throttle logic can remain unchanged
+  window.addEventListener('scroll', function() {
+    const parallaxLine = document.getElementById('parallax-line');
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercentage = (scrollY / scrollHeight) * 100;
+    parallaxLine.style.width = scrollPercentage + 'vw';
+  });
+
+  // Throttle scroll event
+  let throttleTimer = false;
+  document.addEventListener('scroll', function() {
+    if (!throttleTimer) {
+      throttleTimer = true;
+      setTimeout(function() {
+        throttleTimer = false;
+      }, 200);
+    }
+  });
+</script>
+
+
+
+<!-- Extending Line Effect for Swiper -->
+<script>
+  document.addEventListener('scroll', function() {
+    const swiperContainer = document.querySelector('.swiper-container');
+    const swiperSlides = swiperContainer.querySelectorAll('.swiper-slide');
+    const line = swiperContainer.querySelector('.parallax-line');
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const scrollPosition = window.scrollY;
+    const progress = (scrollPosition / maxScroll) * 50;
+    
+    line.style.width = `${progress}%`;
+
+    swiperSlides.forEach(slide => {
+      if (isElementInViewport(slide)) {
+        const slideCenterX = slide.getBoundingClientRect().left + slide.offsetWidth / 2;
+        line.style.left = `${slideCenterX}px`;
+      }
+    });
+  });
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+</script>
+
+
+<!-- Show Content Function for Sidebar -->
+<script>
+  function showContent(contentId) {
+    const contentSections = document.querySelectorAll('.content-section');
+    
+    contentSections.forEach(section => {
+        section.style.display = 'none';
+        section.classList.remove('active');
+    });
+    
+    const activeSection = document.getElementById(contentId);
+    if (activeSection) {
+        activeSection.style.display = 'block';
+        setTimeout(() => {
+            activeSection.classList.add('active');
+        }, 10); // Timeout to trigger CSS transition
+    }
+    
+    // Remove 'active' class from all sidebar links
+    var links = document.querySelectorAll('.w3-sidebar a');
+    links.forEach(function (link) {
+        link.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked link
+    event.currentTarget.classList.add('active');
+  }
+
+  // Show the first content by default
+  document.addEventListener('DOMContentLoaded', function () {
+      showContent('content1');
+  });
+</script>
+
+<!-- Initialization for ES Users -->
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by VinceLaMuzika-->
+  </body>
+</html>

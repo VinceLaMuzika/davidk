@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'fl-bigmug-line';
+	src: url(../../assets/fonts/fl-bigmug-line-12742729323e6e7cafa7a727c678c84b.eot) format('embedded-opentype'),
+	url(../../assets/fonts/fl-bigmug-line-12742729323e6e7cafa7a727c678c84b.eot) format('embedded-opentype'),
+	url(../../assets/fonts/fl-bigmug-line-96d69e5ee7241e304c3b022d88153478.woff) format('woff'),
+	url(../../assets/fonts/fl-bigmug-line-c40639d8384d9cce865fae8c8770956a.ttf) format('truetype'),
+	url(../../assets/fonts/fl-bigmug-line-64813df16688b3a8c36b68772a28ac2c.svg) format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Linearicons';
+	src: url(../../assets/fonts/Linearicons-fff75bb9be8f7bab190842e127aaa5f0.eot) format('embedded-opentype'),
+	url(../../assets/fonts/Linearicons-d083594468208f248142061ded35d10a.woff) format('woff'),
+	url(../../assets/fonts/Linearicons-2d27a7481a2f6431c858456ab4210742.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

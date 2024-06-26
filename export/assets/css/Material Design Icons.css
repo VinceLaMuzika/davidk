@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'Material Design Icons';
+	src: url(../../assets/fonts/Material%20Design%20Icons-641cf8befb4e53727d4da669504bf6ed.eot?v=1.4.57) format('embedded-opentype'),
+	url(../../assets/fonts/Material%20Design%20Icons-641cf8befb4e53727d4da669504bf6ed.eot) format('embedded-opentype'),
+	url(../../assets/fonts/Material%20Design%20Icons-43aae2e857cff8f780b69a6bc06a23f0.woff2?v=1.4.57) format('woff2'),
+	url(../../assets/fonts/Material%20Design%20Icons-2149667fb0ac9833bdf148aa6ee01af2.woff?v=1.4.57) format('woff'),
+	url(../../assets/fonts/Material%20Design%20Icons-87f18ad7c5213927625587eba0de7211.ttf?v=1.4.57) format('truetype'),
+	url(../../assets/fonts/Material%20Design%20Icons-87058594e2d72b3cbeca0eff7bdac73e.svg?v=1.4.57) format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
