@@ -130,48 +130,78 @@
 }</style>
     </head>
     <body>
-        <div class="custom-cursor"></div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="color: white;">
-                    <img src="https://vincelamuzika.github.io/davidk/david k logo 2.png" alt="David K Logo" class="navbar-logo">
-                </a>
-            </div>
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="https://vincelamuzika.github.io/davidk/index.html" style="color: white;"><strong class="mr-1">Home</strong></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false" style="color: white;"> <strong class="mr-1">Portfolio</strong> </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item custom-dropdown-item" href="#product-shoots">Product Portfolio</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item custom-dropdown-item" href="#cinematography">Cinematic Productions</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li>
-                                <a class="dropdown-item custom-dropdown-item" href="#our-clientele">Our Clientele</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-1" href="#" style="color: white;"><strong>Reviews</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://vincelamuzika.github.io/davidk/contacts.html" style="color: white;"><strong class="mr-1">Contact&nbsp;</strong></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+       <!-- Page Header-->
+       <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+       <link rel="stylesheet" href="navbar/fonts/icomoon/style.css">
+   
+       <link rel="stylesheet" href="navbar/css/owl.carousel.min.css">
+   
+       <!-- Bootstrap CSS -->
+       <link rel="stylesheet" href="navbar/css/bootstrap.min.css">
+       
+       <!-- Style -->
+       <link rel="stylesheet" href="navbar/css/style.css">
+       <!-- Navbar -->
+       <!-- Navbar -->
+       <!-- Navbar -->
+      
+     <header role="banner">
+         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+           <div class="container">
+             <a class="navbar-brand" href="index.html">
+               <img src="david k logo 2.png" alt="David K Logo">
+             </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+   
+             <div class="collapse navbar-collapse" id="navbarsExample05">
+               <ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+                 <li class="nav-item">
+                   <a class="nav-link active" href="index.html"><strong>Home</strong></a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="font-weight: bold;">Portfolio</a>
+                   <div class="dropdown-menu" aria-labelledby="dropdown04">
+                     <a class="dropdown-item" href="https://vincelamuzika.github.io/davidk/portfolio/index.html#product-shoots">Product Portfolio</a>
+                     <a class="dropdown-item" href="https://vincelamuzika.github.io/davidk/portfolio/index.html#cinematography">Cinematic Productions</a>
+                     <hr class="dropdown-divider" style="border-top: 1px solid #444;">
+                     <a class="dropdown-item" href="#">Our Clientele</a>
+                   </div>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#reviews"><strong>Reviews</strong></a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="contacts.html"><strong>Contact Us</strong></a>
+                 </li>
+               </ul>
+   
+               
+               
+             </div>
+           </div>
+         </nav>
+       </header>
+      
+      
+       <style>
+       .navbar-brand {
+         size: 60px;
+           color: white !important;
+       }
+       .nav-link {
+           color: white !important;
+       }
+       .dropdown-menu {
+           background-color: #00000000;
+           border: none;
+       }
+       .dropdown-item {
+           color: white !important;
+       }
+     </style>
     <main class="main-content">
         <section class="site-section-hero bg-image mb-5" style="background-image: url('images/hero-min.jpg');" data-stellar-background-ratio="0.5" id="section-home">
             <div class="row justify-content-center align-items-center">
@@ -190,6 +220,7 @@
                 <div class="col-12 text-center">
                     <h2 class="heading">Product Shoots</h2>
                 </div>
+            </div>
             </div>
             <p style="text-align: center;">*Click on image to view product gallery</p>
 
@@ -532,13 +563,14 @@
                                                                 </div>
                                                             </a>
                                                         </div>
+                                                    </div> 
                                             </section>
                                             <!-- #section-photos -->
                                             <style>.counter-minimal-counters {
     font-size: 36;
 }</style>
                             </section>
-                            <!-- Page Footer-->
+                                                      <!-- Page Footer-->
                             <footer class="section footer-classic bg-gray-950">
                                 <div class="footer-classic-main">
                                     <div class="container">
@@ -614,20 +646,10 @@
                                                         <h3 class="text-white">About Us</h3>
                                                         <p class="text-white">Since 2024, our media company has been delivering top-notch media solutions to a diverse range of clients. We specialize in creating compelling content that captivates audiences and drives engagement.</p>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <h3 class="text-white">Newsletter</h3>
-                                                        <!-- RD Mailform-->
-                                                        <form class="rd-form rd-mailform form-inline subscribe-form" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
-                                                            <div class="form-wrap">
-                                                                <input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required">
-                                                                <label class="form-label" for="subscribe-form-2-email">E-mail</label>
-                                                            </div>
-                                                            <button class="button button-primary-gradient button-icon-only text-center mt-0" type="submit" aria-label="subscribe">
-                                                                <span class="icon icon-md mdi mdi-email-outline"></span>
-                                                            </button>
-                                                            <div class="form-button">
+                                                    
+                                                         
 </div>
-                                                        </form>
+                                                        
                                                         <style>.material-symbols-outlined {
     font-variation-settings: 'FILL'0,
                                   'wght'400,

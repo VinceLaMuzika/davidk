@@ -2456,7 +2456,7 @@ input[type="button"].btn-block {
 .dropdown-item.active, .dropdown-item:active {
 	color: #fff;
 	text-decoration: none;
-	background-color: #007bff;
+	background-;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -2769,7 +2769,7 @@ input[type="button"].btn-block {
 
 .custom-control-input:checked ~ .custom-control-label::before {
 	color: #fff;
-	background-color: #007bff;
+	background-;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -2825,7 +2825,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-	background-color: #007bff;
+	background-;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
@@ -2833,7 +2833,7 @@ input[type="button"].btn-block {
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-	background-color: #007bff;
+	background-;
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -2853,7 +2853,7 @@ input[type="button"].btn-block {
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-	background-color: #007bff;
+	background-;
 }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
@@ -3004,7 +3004,7 @@ input[type="button"].btn-block {
 	width: 1rem;
 	height: 1rem;
 	margin-top: -0.25rem;
-	background-color: #007bff;
+	background-;
 	border: 0;
 	border-radius: 1rem;
 	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3039,7 +3039,7 @@ input[type="button"].btn-block {
 .custom-range::-moz-range-thumb {
 	width: 1rem;
 	height: 1rem;
-	background-color: #007bff;
+	background-;
 	border: 0;
 	border-radius: 1rem;
 	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3074,7 +3074,7 @@ input[type="button"].btn-block {
 .custom-range::-ms-thumb {
 	width: 1rem;
 	height: 1rem;
-	background-color: #007bff;
+	background-;
 	border: 0;
 	border-radius: 1rem;
 	transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3196,7 +3196,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #007bff;
+	background-;
 }
 
 .nav-fill .nav-item {
@@ -4093,7 +4093,7 @@ input[type="button"].btn-block {
 	color: #fff;
 	text-align: center;
 	white-space: nowrap;
-	background-color: #007bff;
+	background-;
 	transition: width 0.6s ease;
 }
 
@@ -4178,8 +4178,8 @@ input[type="button"].btn-block {
 .list-group-item.active {
 	z-index: 2;
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff;
+	background-;
+	border-;
 }
 
 .list-group-flush .list-group-item {
